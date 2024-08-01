@@ -14,10 +14,9 @@ The purpose of the repository is to show one approach of setting up a C/C++ proj
 ## Installation
 
 ```bash
-mkdir build
-cd build
-cmake ..
-make
+cmake -B build -S .
+cmake --build build
+ctest --test-dir build
 ```
 
 ## Usage
